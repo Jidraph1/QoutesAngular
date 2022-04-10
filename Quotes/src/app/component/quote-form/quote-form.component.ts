@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Subject } from 'rxjs';
 import { QuoteMessage } from 'src/app/quote-message';
 
 @Component({
@@ -44,5 +43,5 @@ export class QuoteFormComponent implements OnInit {
     const subjectQuote = currentList[index];
     subjectQuote.dislikes = subjectQuote.dislikes + 1
   }
-  
+
 }

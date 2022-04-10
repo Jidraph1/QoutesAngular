@@ -14,9 +14,9 @@
       </form>
  <!-- For the two way data binding section -->
       <div class="return-section">
-        <p class="return-text">Quote: </p>
-        <p class="return-text">Author:</p>
-        <p class="return-text">Your Name:</p>
+        <p class="return-text">Quote: <span> {{quoteMessage}}</span></p>
+        <p class="return-text">Author: <span> {{quoteAuthor}}</span></p>
+        <p class="return-text">Your Name:<span> {{quoteUser}}</span></p>
       </div>
 
       <div class="col-lg-8 col-md-6 col-sm-12 display-quote">
@@ -31,9 +31,12 @@
                     <p>Published {{quote.published}}</p>
 
                     <!-- Buttons -->
-                    <button (click)= "onLike(i)" class="btn btn-outline-success m-1 like-button" type="button">Likes</button>
-                    <button (click)= "onDislike(i)" class="btn btn-outline-danger m-1 dislike-button" type="button">Dislike</button>
-                    <button (click)= "onDelete(i)" class="btn btn-outline-danger m-1 like-button" type="button">Delete</button>
+                    <button (click)="onLike(i)" class="btn btn-primary m-1 like-button" type="button">Likes
+                        {{quote.likes}}</button>
+                      <button (click)="onDislike(i)" class="btn btn-primary m-1 dislike-button" type="button">Dislikes
+                        {{quote.dislikes}}</button>
+                      <button (click)="onDelete(i)" class="btn btn-primary m-1 delete-button" type="button">Delete
+                        Quote</button>
           </div>
 
       </div>
