@@ -1,11 +1,11 @@
 # Quotes
 
-## project name
+## Project name
 Quotes 101
 
-## Development server
+## Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+QuotesForYou is a fun website application that enables a user to input their favourite quotes. The user is also able to upvote, downvote and delete any quote to their liking. The quote details are then displayed on a card. This project is built using HTML, CSS, Bootstrap and Angular.
 
 ## What was used to build to website
 The website was built using HTML, CSS, Bootstrap and Angular to ensure it contains functionality that assists the end user to navigate within the website.
@@ -13,6 +13,10 @@ Visual Studio Code was the text editor used to build the website.
 
 # Resources 
 * Templates used to develop the above landing page were from google fornts for the fonts,  and bootstrap css.
+
+## Setup Instructions
+
+The project is on a website, and can be accessed by any device of choice. No installation is needed.
 
 
 ## Running unit tests
