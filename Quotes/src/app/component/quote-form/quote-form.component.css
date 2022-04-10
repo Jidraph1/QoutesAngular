@@ -1,0 +1,60 @@
+.quote section{
+    font-family: Roboto;
+}
+
+input{
+    width: 70%;
+}
+label{
+    padding:1%;
+}
+.btn {
+    background-color: #4A403A;
+    margin: 10px 0;
+    border: none;
+}
+.submit-btn{
+    width:70%
+}
+.submit-btn:hover{
+    background-color: #A45D5D;
+    transition: 200ms;
+}
+.return-section {
+    font-family: 'Roboto';
+}
+
+.return-text {
+    font-family: 'Playfair';
+    
+}
+
+.container-fluid {
+    padding: 2%;
+}
+
+.display-quote {
+    font-family: 'Roboto';
+    font-size: smaller;
+    
+}
+
+.card {
+    background-color: #CEE5D0;
+    border: none;
+    margin: 1%;
+}
+
+.delete-button {
+    background-color: #D57E7E;
+}
+
+.like-button:hover {
+    background-color: #3A6351;
+    transition: 200ms;
+}
+
+.dislike-button:hover {
+    background-color: #D57E7E;
+    transition: 200ms;
+}
