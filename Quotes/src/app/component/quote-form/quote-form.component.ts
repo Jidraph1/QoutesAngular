@@ -28,4 +28,8 @@ export class QuoteFormComponent implements OnInit {
     this.newQuote = new QuoteMessage(0, this.quoteMessage, this.quoteAuthor, this.quoteUser, this.likes, this.dislikes, published);
     this.quotes.push(this.newQuote)
   }
+
+  onDelete (index: number): void{
+    this.quotes.splice(index, 1)
+  }
 }

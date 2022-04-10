@@ -21,13 +21,19 @@
 
       <div class="col-lg-8 col-md-6 col-sm-12 display-quote">
           <div class="row">
-              <div class="col-sm-6" *ngFor=" let quote of quotes; let i = index"
+              <div class="col-sm-6" *ngFor=" let quote of quotes; let i = index">
               <!-- card for the display -->
               <div class="card">
                 <div class="card-body">
                     <h5 class="card-title"><span> {{quote.quoteMessage}}</span></h5>
                     <p class="card-text">Author: <span>{{quote.quoteAuthor}}</span></p>
                     <p class="card-text">Submitted by: <span>{{quote.quoteUSer}}</span></p>
+                    <p>Published {{quote.published}}</p>
+
+                    <!-- Buttons -->
+                    <button (click)= "onLike(i)" class="btn btn-outline-success m-1 like-button" type="button">Likes</button>
+                    <button (click)= "onDislike(i)" class="btn btn-outline-danger m-1 dislike-button" type="button">Dislike</button>
+                    <button (click)= "onDelete(i)" class="btn btn-outline-danger m-1 like-button" type="button">Delete</button>
           </div>
 
       </div>
