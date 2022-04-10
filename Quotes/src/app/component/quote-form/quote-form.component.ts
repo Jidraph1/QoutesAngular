@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Subject } from 'rxjs';
 import { QuoteMessage } from 'src/app/quote-message';
 
 @Component({
@@ -32,4 +33,16 @@ export class QuoteFormComponent implements OnInit {
   onDelete (index: number): void{
     this.quotes.splice(index, 1)
   }
+  
+  onLike (index : number) : void{
+    const currentList = this.quotes;
+    const subjectQuote = currentList[index];
+    subjectQuote.likes = subjectQuote.likes + 1
+  }
+  onDislike (index : number) : void{
+    const currentList = this.quotes;
+    const subjectQuote = currentList[index];
+    subjectQuote.dislikes = subjectQuote.dislikes + 1
+  }
+  
 }
