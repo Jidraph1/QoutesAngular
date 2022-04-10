@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { QuoteFormComponent } from './component/quote-form/quote-form.component';
+import { TimeAgoPipe } from './time-ago.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    QuoteFormComponent
+    QuoteFormComponent,
+    TimeAgoPipe
   ],
   imports: [
     BrowserModule,
