@@ -17,6 +17,7 @@ import { TimeAgoPipe } from './time-ago.pipe';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],

@@ -16,6 +16,7 @@ export class QuoteFormComponent implements OnInit {
   newQuote: any;
   likes: number = 0;
   dislikes: number = 0;
+  published: any ;
 
 
   constructor() { }
@@ -25,7 +26,7 @@ export class QuoteFormComponent implements OnInit {
 
   onSubmit(){
     let published = new Date();
-    this.newQuote = new QuoteMessage(0, this.quoteMessage, this.quoteAuthor, this.quoteUser, this.likes, this.dislikes, published);
+    this.newQuote = new QuoteMessage(0, this.quoteMessage, this.quoteAuthor, this.quoteUser, this.likes, this.dislikes, this.published);
     this.quotes.push(this.newQuote)
   }
   
