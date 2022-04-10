@@ -18,6 +18,19 @@
         <p class="return-text">Author:</p>
         <p class="return-text">Your Name:</p>
       </div>
+
+      <div class="col-lg-8 col-md-6 col-sm-12 display-quote">
+          <div class="row">
+              <div class="col-sm-6" *ngFor=" let quote of quotes; let i = index"
+              <!-- card for the display -->
+              <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><span> {{quote.quoteMessage}}</span></h5>
+                    <p class="card-text">Author: <span>{{quote.quoteAuthor}}</span></p>
+                    <p class="card-text">Submitted by: <span>{{quote.quoteUSer}}</span></p>
+          </div>
+
+      </div>
     </div>
   </div>
 </div>
