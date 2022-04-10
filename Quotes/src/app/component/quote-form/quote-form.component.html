@@ -1,6 +1,6 @@
 <div class="container-fluid">
   <div class="row">
-    <div class=" col-lg-4 col-md-6 col-sm-12 quote-section">
+    <div class=" col-md-6  quote-section">
       <form #f='ngForm' ngSubmit="onSubmit()">
         <label for="">Quote</label>
         <input class="form-control" name="quote" [(ngModel)]="quoteMessage" type="text" placeholder="">
@@ -8,8 +8,8 @@
         <input class="form-control" name="author" [(ngModel)]="quoteAuthor" type="text">
         <label for="">Your Name</label>
         <input class="form-control" name="user" [(ngModel)]="quoteUser" type="text">
-        <!-- ngSubmit did not work, therefore opted to use click -->
-        <button (click)="onSubmit()" class="btn submit-btn btn-primary btn-lg">Submit Your Quote</button>
+        <!-- ngSubmit did not work, used click function instead -->
+        <button (click)="onSubmit()" class="btn submit-btn btn-outline-success btn-lg">Submit Your Quote</button>
       </form>
  <!-- For the two way data binding section -->
       <div class="return-section">
@@ -17,10 +17,11 @@
         <p class="return-text">Author: <span> {{quoteAuthor}}</span></p>
         <p class="return-text">Your Name:<span> {{quoteUser}}</span></p>
       </div>
+    </div>
 
-      <div class="col-lg-8 display-quote">
-          <div class="row">
-              <div class="col-sm-6" *ngFor=" let quote of quotes; let i = index">
+      <div class="col-md-6 display-quote">
+        <div class="row">
+          <div class="col-sm-6" *ngFor=" let quote of quotes; let i = index">
               <!-- card for the display -->
               <div class="card">
                 <div class="card-body">
@@ -37,8 +38,10 @@
                       <button (click)="onDelete(i)" class="btn btn-primary m-1 delete-button" type="button">Delete
                         Quote</button>
                         <p class="text-success" *ngIf = "isMostLiked(i)">Highest liked quote! Well Done</p>
+              </div>
+            </div>
           </div>
+        </div>
       </div>
     </div>
   </div>
-</div>

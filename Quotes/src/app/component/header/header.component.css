@@ -1,7 +1,7 @@
 /* Styles to the header component */
 .intro{
     padding:2%;
-    background-color: #CEE5D0;
+    background-color: #9cb99e;
 }
 
 h1{
@@ -17,5 +17,5 @@ p{
 }
 .quote-author{
     font-family: 'Ephesis';
-    font-size: larger;
+    font-size: 25px;
 }
