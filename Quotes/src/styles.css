@@ -1,1 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
+/* Bootstrap link */
+@import "~bootstrap/dist/css/bootstrap.css"
+
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Montserrat&family=Playfair+Display&family=Roboto&display=swap');

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { QuoteMessage } from 'src/app/quote-message';
 
 @Component({
   selector: 'app-quote-form',

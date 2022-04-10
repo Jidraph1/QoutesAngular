@@ -1,0 +1,21 @@
+/* Styles to the header component */
+.intro{
+    padding:2%;
+    background-color: #CEE5D0;
+}
+
+h1{
+    color: #4a403a;
+    font-family: 'Playfair';
+    font-weight: bold;
+    font-size: 55px;
+}
+p{
+    color:#A45D5D;
+    font-family: 'Roboto';
+    font-size: smaller;
+}
+.quote-author{
+    font-family: 'Ephesis';
+    font-size: larger;
+}
