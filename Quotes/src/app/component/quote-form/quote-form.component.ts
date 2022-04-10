@@ -11,7 +11,7 @@ export class QuoteFormComponent implements OnInit {
   quotes: QuoteMessage [] = [];
 
   quoteMessage! : string;
-  qouteAuthor! : string;
+  quoteAuthor! : string;
   quoteUser!: string;
   newQuote: any;
   likes: number = 0;
@@ -23,4 +23,9 @@ export class QuoteFormComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onSubmit(){
+    let published = new Date();
+    this.newQuote = new QuoteMessage(0, this.quoteMessage, this.quoteAuthor, this.quoteUser, this.likes, this.dislikes, published);
+    this.quotes.push(this.newQuote)
+  }
 }
