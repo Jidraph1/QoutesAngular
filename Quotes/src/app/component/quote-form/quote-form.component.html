@@ -18,7 +18,7 @@
         <p class="return-text">Your Name:<span> {{quoteUser}}</span></p>
       </div>
 
-      <div class="col-lg-8 col-md-6 col-sm-12 display-quote">
+      <div class="col-lg-8 display-quote">
           <div class="row">
               <div class="col-sm-6" *ngFor=" let quote of quotes; let i = index">
               <!-- card for the display -->
@@ -27,7 +27,7 @@
                     <h5 class="card-title"><span> {{quote.quoteMessage}}</span></h5>
                     <p class="card-text">Author: <span>{{quote.quoteAuthor}}</span></p>
                     <p class="card-text">Submitted by: <span>{{quote.quoteUser}}</span></p>
-                    <p>Published {{quote.published}}</p>
+                    <p>Published {{quote.published|timeAgo}}</p>
 
                     <!-- Buttons -->
                     <button (click)="onLike(i)" class="btn btn-primary m-1 like-button" type="button">Likes
