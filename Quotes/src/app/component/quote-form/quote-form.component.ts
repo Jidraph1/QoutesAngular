@@ -28,10 +28,6 @@ export class QuoteFormComponent implements OnInit {
     this.newQuote = new QuoteMessage(0, this.quoteMessage, this.quoteAuthor, this.quoteUser, this.likes, this.dislikes, published);
     this.quotes.push(this.newQuote)
   }
-
-  onDelete (index: number): void{
-    this.quotes.splice(index, 1)
-  }
   
   onLike (index : number) : void{
     const currentList = this.quotes;
@@ -44,4 +40,18 @@ export class QuoteFormComponent implements OnInit {
     subjectQuote.dislikes = subjectQuote.dislikes + 1
   }
 
+  onDelete (index: number): void{
+    this.quotes.splice(index, 1)
+  }
+
+  isMostLiked(index: number): boolean {
+    const currentList = this.quotes;
+    const subjectQuote = currentList[index];
+    let quotesComparisons: boolean[] = [];
+    currentList.forEach(item => {
+      const value = subjectQuote.likes >= item.likes;
+      quotesComparisons.push(value);
+    })
+    return quotesComparisons.every(item => item === true);
+  }
 }
